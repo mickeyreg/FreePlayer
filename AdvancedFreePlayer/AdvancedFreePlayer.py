@@ -1197,6 +1197,10 @@ class AdvancedFreePlayerStart(Screen):
             self["myPath"].setText(d)
         else:
             d = self.filelist.getCurrentDirectory()
+            if d is None:
+                d=""
+            elif not d.endswith('/'):
+                d +='/'
             f = self.filelist.getFilename()
             printDEBUG("self.selectFile>> " + d + f)
             temp = self.getExtension(f)
