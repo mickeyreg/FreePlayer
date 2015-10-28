@@ -68,6 +68,23 @@ F5/SPACE - show about\n\
 OK - infobar\n\
 audio - change audio track\n\
 ")
+elif path.exists('/var/grun/'):
+  KeyMapInfo=_("Player KEYMAP:\n\n\
+up/down - position subtitle\n\
+left/right - size subtitle\n\
+channel up/down - seek+/- subtitle\n\
+3/6/9 - seek+ 30sek/2min/5min movie\n\
+1/4/7 - seek- 30sek/2min/5min movie\n\
+play/red - pause on/off\n\
+green - change background color\n\
+yellow - change type font\n\
+blue - change color font\n\
+N - show/hide subtitle\n\
+text - Download subtitles\n\
+app - show about\n\
+info/ok - infobar\n\
+opt - change audio track\n\
+")
 else:
   KeyMapInfo=_("Player KEYMAP:\n\n\
 up/down - position subtitle\n\
